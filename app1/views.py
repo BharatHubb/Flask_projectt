@@ -50,7 +50,6 @@ def get_data(request):
 
 def create_csv(request):
     print('Hello')
-    print('bye')
     responsed = HttpResponse(content_type = "sample/csv")   
     responsed['Content-Disposition'] = 'attachment; filename = "sample.csv"'
     cur = csv.writer(responsed)
